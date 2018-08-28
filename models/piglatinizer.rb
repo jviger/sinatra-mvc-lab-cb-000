@@ -12,7 +12,7 @@ class PigLatinizer
    def latinize
      latinized = ""
      array = @user_text.split(/[aeiou]/)
-     if ["a","e","i","o","u"].include?(array[0])
+     if ["a","e","i","o","u"].include?(@user_text[0,1])
        latinized = @user_text + "ay"
      else 
        latinized = array.join() + array[1] + "ay"
