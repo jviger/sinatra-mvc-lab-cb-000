@@ -3,7 +3,12 @@ class PigLatinizer
   attr_accessor :user_phrase
   
   def piglatinize(user_phrase)
-    
+    if user_phrase.split(" ").length == 1 
+      piglatinize_word(user_phrase)
+    else 
+      piglatinize_sentence(user_phrase)
+    end
+  end
   
  
    def piglatinize_word(user_phrase)
