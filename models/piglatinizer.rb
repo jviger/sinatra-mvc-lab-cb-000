@@ -2,6 +2,8 @@ class PigLatinizer
   
   attr_accessor :user_phrase
   
+  def piglatinize(user_phrase)
+    
   
  
    def piglatinize_word(user_phrase)
@@ -19,7 +21,8 @@ class PigLatinizer
    def piglatinize_sentence(user_phrase)
     
       word_array = user_phrase.split(" ")
-      word_array.collect 
+      word_array.collect { |x| x.piglatinize_word }
+      word_array.join(" ")
      
    end 
   
