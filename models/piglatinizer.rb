@@ -13,7 +13,7 @@ class PigLatinizer
  
    def piglatinize_word(user_phrase)
      latinized = ""
-     array = string.split(/[aeiou]/)
+     array = user_phrase.split(/[aeiou]/)
      if ["a","e","i","o","u"].include?(user_phrase[0,1])
        latinized = user_phrase + "ay"
      else 
