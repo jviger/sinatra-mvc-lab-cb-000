@@ -2,17 +2,13 @@ class PigLatinizer
   
   attr_accessor :user_phrase
   
-   def initialize(user_phrase)
+   def splits
   
       @user_phrase = user_phrase.downcase
   
    end
   
-  def splits
-    
-    
-    
-  end
+ 
    def latinize
      latinized = ""
      array = @user_phrase.split(/[aeiou]/)
