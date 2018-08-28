@@ -10,8 +10,9 @@ class PigLatinizer
   
   
    def latinize
-     
-     @user_text.f
+     latinized = ""
+     if ["a","e","i","o","u"].include?(@user_text.first)
+       latinized = @user_text + "yay"
      
    end 
   
