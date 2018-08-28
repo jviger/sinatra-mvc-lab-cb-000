@@ -11,6 +11,7 @@ class PigLatinizer
   
    def latinize
      
+     @user_text.f
      
    end 
   
