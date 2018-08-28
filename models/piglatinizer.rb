@@ -10,7 +10,7 @@ class PigLatinizer
    end
   
  
-   def latinize
+   def piglatinize
      latinized = ""
      array = @user_phrase.split(/[aeiou]/)
      if ["a","e","i","o","u"].include?(@user_phrase[0,1])
