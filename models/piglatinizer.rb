@@ -9,5 +9,9 @@ class PigLatinizer
    end
   
   
+   def latinize
+     
+     
+   end 
   
 end
