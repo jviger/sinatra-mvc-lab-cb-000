@@ -15,7 +15,7 @@ class PigLatinizer
      if ["a","e","i","o","u"].include?(array[0])
        latinized = @user_text + "ay"
      else 
-       latinized = array[1..array.legnth-1].join[]
+       latinized = array.join() + array[1] + "ay"
      end
      latinized
      
