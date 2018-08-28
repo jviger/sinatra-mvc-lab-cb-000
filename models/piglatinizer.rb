@@ -2,9 +2,10 @@ class PigLatinizer
   
   attr_accessor :user_phrase
   
-   def splits
-  
-      @user_phrase = user_phrase.downcase
+   def initialize
+     
+    @user_phrase = user_phrase.downcase
+      
   
    end
   
