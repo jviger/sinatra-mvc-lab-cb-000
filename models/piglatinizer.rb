@@ -4,7 +4,7 @@ class PigLatinizer
   
    def initialize(user_text)
   
-      @user_text = user_text
+      @user_text = user_text.downcase
   
    end
   
