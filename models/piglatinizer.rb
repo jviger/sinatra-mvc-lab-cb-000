@@ -8,7 +8,11 @@ class PigLatinizer
   
    end
   
-  
+  def splits
+    
+    
+    
+  end
    def latinize
      latinized = ""
      array = @user_phrase.split(/[aeiou]/)
