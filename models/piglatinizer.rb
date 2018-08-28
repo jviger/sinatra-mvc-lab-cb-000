@@ -1,21 +1,21 @@
 class PigLatinizer
   
-  attr_accessor :user_text
+  attr_accessor :user_phrase
   
-   def initialize(user_text)
+   def initialize(user_phrase)
   
-      @user_text = user_text.downcase
+      @user_phrase = user_phrase.downcase
   
    end
   
   
    def latinize
      latinized = ""
-     array = @user_text.split(/[aeiou]/)
-     if ["a","e","i","o","u"].include?(@user_text[0,1])
-       latinized = @user_text + "ay"
+     array = @user_phrase.split(/[aeiou]/)
+     if ["a","e","i","o","u"].include?(@user_phrase[0,1])
+       latinized = @user_phrase + "ay"
      else 
-       latinized = @user_text.sub!(array[0],"") + array[0] + "ay"
+       latinized = @user_phrase.sub!(array[0],"") + array[0] + "ay"
      end
      latinized
      
