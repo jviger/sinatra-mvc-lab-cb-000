@@ -14,6 +14,7 @@ class PigLatinizer
      if ["a","e","i","o","u"].include?(@user_text.first)
        latinized = @user_text + "ay"
      end
+     latinized
      
    end 
   
