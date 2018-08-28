@@ -2,15 +2,9 @@ class PigLatinizer
   
   attr_accessor :user_phrase
   
-   def initialize
-     
-    @user_phrase = user_phrase.downcase
-      
-  
-   end
   
  
-   def piglatinize
+   def piglatinize(string)
      latinized = ""
      array = @user_phrase.split(/[aeiou]/)
      if ["a","e","i","o","u"].include?(@user_phrase[0,1])
