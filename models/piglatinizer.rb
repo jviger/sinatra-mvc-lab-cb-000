@@ -15,5 +15,12 @@ class PigLatinizer
      latinized
      
    end 
+   
+   def piglatinize_sentence(user_phrase)
+    
+      word_array = user_phrase.split(" ")
+      word_array.collect 
+     
+   end 
   
 end
